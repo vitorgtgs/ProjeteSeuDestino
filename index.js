@@ -31,20 +31,20 @@ function fazerPergunta() {
         return
   }
 
-    buttonPerguntar.setAttribute("disabled", true)
+  buttonPerguntar.setAttribute("disabled", true)
 
-    const pergunta = "<div>" + inputPergunta.value + "</div>"
+  const pergunta = "<div>" + inputPergunta.value + "</div>"
 
 // gerar numero aletorio
-    const totalRespostas = respostas.length
-    const numeroAleatorio = Math.floor(Math.random() * totalRespostas) 
+  const totalRespostas = respostas.length
+  const numeroAleatorio = Math.floor(Math.random() * totalRespostas) 
 
-    elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
+  elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
 
-    elementoResposta.style.opacity = 1;
+  elementoResposta.style.opacity = 1;
 
 // sumir a resposta depois de 3 segundos
-    setTimeout(function() {
+  setTimeout(function() {
         elementoResposta.style.opacity = 0;
         buttonPerguntar.removeAttribute("disabled")
     }, 3000)
