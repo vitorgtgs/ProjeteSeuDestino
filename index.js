@@ -35,7 +35,7 @@ function fazerPergunta() {
 
   const pergunta = "<div>" + inputPergunta.value + "</div>"
 
-// gerar numero aletorio
+  // gerar numero aletorio
   const totalRespostas = respostas.length
   const numeroAleatorio = Math.floor(Math.random() * totalRespostas) 
 
