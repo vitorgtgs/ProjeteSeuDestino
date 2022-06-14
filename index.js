@@ -1,8 +1,8 @@
 const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
-const buttonPerguntar = document.querySelector("#buttonPerguntar")
+const buttonPerguntar = document.querySelector('#buttonPerguntar')
 const respostas = [
-    "Certeza!",
+  "Certeza!",
   "Não tenho tanta certeza.",
   "É decididamente assim.",
   "Não conte com isso.",
@@ -26,26 +26,26 @@ const respostas = [
 // clicar em fazer pergunta
 function fazerPergunta() {
 
-    if(inputPergunta.value =="") {
-        alert("Digite sua pergunta")
-        return
-    }
+  if(inputPergunta.value == "") {
+    alert("Digite sua pergunta")
+    return
+  }
 
-    buttonPerguntar.setAttribute("disabled", true)
+  buttonPerguntar.setAttribute("disabled", true)
 
-    const pergunta = "<div>" + inputPergunta.value + "</div>"
+  const pergunta = "<div>" + inputPergunta.value + "</div>"
 
-// gerar numero aletorio
-    const totalRespostas = respostas.length
-    const numeroAleatorio = Math.floor(Math.random() * totalRespostas) 
+  // gerar numero aletorio
+  const  totalRespostas = respostas.length
+  const numeroAleatorio = Math.floor(Math.random() * totalRespostas)
 
-    elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
+  elementoResposta.innerHTML = pergunta + respostas[numeroAleatorio]
 
-    elementoResposta.style.opacity = 1;
+  elementoResposta.style.opacity = 1;
 
-// sumir a resposta depois de 3 segundos
-    setTimeout(function() {
-        elementoResposta.style.opacity = 0;
-        buttonPerguntar.removeAttribute("disabled")
-    }, 3000)
+  // sumir a resposta depois de 3 segundos
+  setTimeout(function() {
+    elementoResposta.style.opacity = 0;
+    buttonPerguntar.removeAttribute("disabled")
+  }, 3000)
 }
