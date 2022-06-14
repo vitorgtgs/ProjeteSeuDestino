@@ -2,7 +2,7 @@ const elementoResposta = document.querySelector("#resposta")
 const inputPergunta = document.querySelector("#inputPergunta")
 const buttonPerguntar = document.querySelector("#buttonPerguntar")
 const respostas = [
-    "Certeza!",
+  "Certeza!",
   "Não tenho tanta certeza.",
   "É decididamente assim.",
   "Não conte com isso.",
@@ -27,8 +27,8 @@ const respostas = [
 function fazerPergunta() {
 
   if(inputPergunta.value == "") {
-        alert("Digite sua pergunta")
-        return
+    alert("Digite sua pergunta")
+    return
   }
 
   buttonPerguntar.setAttribute("disabled", true)
@@ -45,7 +45,7 @@ function fazerPergunta() {
 
 // sumir a resposta depois de 3 segundos
   setTimeout(function() {
-        elementoResposta.style.opacity = 0;
-        buttonPerguntar.removeAttribute("disabled")
-    }, 3000)
+    elementoResposta.style.opacity = 0;
+    buttonPerguntar.removeAttribute("disabled")
+  }, 3000)
 }
