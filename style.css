@@ -10,10 +10,6 @@ body{
     font-family: sans-serif;
 }
 
-img {
-    margin-top: 100px;
-}
-
 #container {
     margin-top: 100px;
     width: 80%;
@@ -32,23 +28,14 @@ p {
     opacity: 0.7;
 }
 
-input {
+input, button {
     display: block;
-    width: 95%;
-
+    width: 100%;
+  
     padding: 20px;
     font-size: 20px;
     border-radius: 4px;
-}
-
-button {
-    display: block;
-    width: 106%;
-
-    padding: 20px;
-    font-size: 20px;
-    border-radius: 4px;
-}
+  }
 
 input {
     margin-bottom: 20px;
@@ -65,3 +52,16 @@ button:hover {
     filter: brightness(1.2);
     cursor: pointer;   
 }
+
+#resposta {
+    margin-top: 30px;
+  
+    transition: opacity 1s;
+  }
+  
+  #resposta div {
+    font-size: 16px;
+    font-weight: normal;
+    opacity: 0.9;
+    margin-bottom: 10px;
+  }
