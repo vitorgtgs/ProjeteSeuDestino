@@ -1,6 +1,7 @@
 @charset "UT-8";
 * {
     margin: 0;
+    box-sizing: border-box;
 }
 
 body{
