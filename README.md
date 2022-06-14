@@ -1,2 +1,2 @@
-# Projetomagico
+# ProjeteSeuDestino
  Revelador de Destino
