@@ -6,6 +6,8 @@ Revelador de Destino
 
 Projeto simples construído da NLW.
 
+Faça uma Pergunta sobre seu futuro. Será que o gênio escondido dentro da lâmpada responderá!?
+
 [Clique aqui para acessar](https://vitorgtgs.github.io/ProjeteSeuDestino/)
 
 
